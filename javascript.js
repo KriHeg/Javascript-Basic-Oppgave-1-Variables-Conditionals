@@ -23,12 +23,12 @@ typer verdier. Lag noen variabler med følgende datatyper:
 Du kan velge hva innholdet i variablene skal være. Prøv å bruke både let og 
 const når du definerer variablene.
 ******************************************************************************/
-const storeName = "Kristians store"; 
+const storeName = "Kristians store";
 const productName = "Electric car";
-let productPrice = 900000; 
+let productPrice = 900000;
 let productQuantity = 3;
 let isInStock = true;
-const productTags = ["New", "electric", "blue"]; 
+const productTags = ["New", "electric", "blue"];
 let discount;
 
 /******************************************************************************
@@ -45,16 +45,14 @@ Skriv noen eksempler der du tester disse operatorene.
 const totalValue = productPrice * productQuantity;
 console.log("Total value is:", totalValue);
 
-productPrice += 10; 
+productPrice += 10;
 productPrice -= 5;
 console.log(productPrice);
 
 console.log(productQuantity);
-productQuantity+=2;
+productQuantity += 2;
 productQuantity--;
 console.log(productQuantity);
-
-
 
 /******************************************************************************
 OPPGAVE 4
@@ -85,17 +83,13 @@ let goToPage = "";
 
 // Skriv koden for oppgave 4 her
 
-if(userName !== ""&& userAge >= 18 && userIsBlocked === false) 
-    {
-    userIsLoggedIn = true;
-    goToPage = "/home";
-     console.log("Velkommen, " + userName + "! Du er nå logget inn.");
-} 
-else {
-        console.log("Feil: Du oppfyller ikke kravene for å logge inn.");
+if (userName !== "" && userAge >= 18 && userIsBlocked === false) {
+  userIsLoggedIn = true;
+  goToPage = "/home";
+  console.log(`Velkommen, ${userName}! Du er nå logget inn.`);
+} else {
+  console.log(`Feil: Du oppfyller ikke kravene for å logge inn.`);
 }
-
-
 /******************************************************************************
 OPPGAVE 5
 
@@ -113,7 +107,5 @@ at betingelsen din fungerer som den skal.
 // Skriv koden for oppgave 5 her
 
 const userMale = false;
-
-
-const userTitle= userMale ?" Mr. " :" Mrs.";
+const userTitle = userMale ? " Mr. " : " Mrs.";
 console.log(userTitle);
